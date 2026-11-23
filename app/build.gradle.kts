@@ -1,3 +1,4 @@
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -34,6 +35,19 @@ android {
 
     kotlinOptions {
         jvmTarget = "17"
+    }
+
+    buildTypes {
+        getByName("debug") {
+            // Debug build remains unchanged
+        }
+
+        getByName("release") {
+            // Temporary unsigned release configuration.
+            // GitHub Actions will sign the APK securely.
+            isMinifyEnabled = false
+            isShrinkResources = false
+        }
     }
 }
 
