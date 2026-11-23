@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PocoOS Launcher</string>
+    <string name="accessibility_desc">Enables iOS-style bottom gesture navigation, app switcher, and status bar swipe gestures on Poco X3 Pro.</string>
+</resources>
